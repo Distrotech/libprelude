@@ -60,10 +60,12 @@ typedef struct {
  * without having the end program depend on ltdl.
  */
 #ifdef PRELUDE_APPLICATION_USE_LIBTOOL2
+#ifndef lt_preloaded_symbols
 # define lt_preloaded_symbols lt__PROGRAM__LTX_preloaded_symbols
+extern const void *lt_preloaded_symbols[];
+#endif
 #endif
 
-extern const void *lt_preloaded_symbols[];
 
 #define PRELUDE_PLUGIN_SET_PRELOADED_SYMBOLS()         \
         prelude_plugin_set_preloaded_symbols(lt_preloaded_symbols)

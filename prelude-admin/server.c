@@ -39,7 +39,6 @@
 
 #include <gcrypt.h>
 #include <gnutls/gnutls.h>
-#include <gnutls/extra.h>
 
 #include "prelude-client.h"
 #include "prelude-error.h"
