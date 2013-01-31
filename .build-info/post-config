@@ -1,0 +1,7 @@
+#!/bin/bash
+
+for delme in idmef-criteria-string.lex.c idmef-criteria-string.yac.c idmef-criteria-string.yac.h;do
+  if [ -e ../src/${delme} ];then
+    rm ../src/${delme}
+  fi;
+done;
